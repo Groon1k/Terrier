@@ -34,7 +34,7 @@ def files(lst, lst2, iterator, name_user, num_date, num_time, time_difference):
 path = input(r'enter the path to your file: ') + '\\'
 lst_nums_arms = input('you can set the range: ').split()
 lst_final = split(lst_nums_arms, path)
-user = input('name plzzzz: ')
+user = input('name pls: ')
 date = input('date: ') + '  '
 start_time = input('start time: ')
 time_diff = int(input('time difference between installations: '))
@@ -42,5 +42,4 @@ lines = []
 with open(path + 'test.txt') as file:
     for j in file:
         lines.append(j)
-print(lines)
 files(lst_final, lines, 0, user, date, start_time, time_diff)
